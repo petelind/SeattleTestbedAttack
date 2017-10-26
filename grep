@@ -1,0 +1,366 @@
+Trying reference_monitor_aab641.r2py  with  dp2580_attempt2_invalidcontentwrittenclosed_expectedseonreading.r2py
+(2) [ERROR]: AssertionError - After closing ABFile we get wrong content written to it! Here is how it was found: 1. New ABFile was created for writing. 2. Writeat was called with incorrect content (TerriblyWrongContent) 3. File was closed and reopened for reading. 4. Readat was called. Expected: SE, actual: S12345E
+Trying reference_monitor_aab641.r2py  with  dp2580_attempt3_usevalidnamebutsmallcaps_expectedseonreading.r2py
+[(3) ERROR]: AssertionError - sCONTENTe written, file closed, reopened for reading, readat() called, should get SE on readat but got:S12345E
+Trying reference_monitor_aab641.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot remove file "testfile.txt.a" because it is in use!
+--
+Trying reference_monitor_aat414.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_aav304.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_abs662.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: ABFile instance has no attribute 'Afile'
+--
+Trying reference_monitor_abs662.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_ac5769.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.b" because it is already open!
+--
+Trying reference_monitor_afl294.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_ag6026.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.b" because it is already open!
+--
+Trying reference_monitor_aj1973.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: ABFile instance has no attribute 'Afile'
+--
+Trying reference_monitor_aj1973.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_ajf500.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: ABFile instance has no attribute 'Afile'
+--
+Trying reference_monitor_ajf500.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_al4146.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: global name 'false' is not defined
+--
+Trying reference_monitor_al4146.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_aps549.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_apt321.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_ar5439.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: ABFile instance has no attribute 'Afile'
+--
+Trying reference_monitor_ar5439.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_as11294.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_as11419.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: ABFile instance has no attribute 'Afile'
+--
+Trying reference_monitor_as11419.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_as8513.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: ABFile instance has no attribute 'Afile'
+--
+Trying reference_monitor_as8513.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+%s is not valid testfile.txt.bTrying reference_monitor_ash521.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_at3761.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_bd1308.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_bt1124.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: Function 'ABopenfile' expects at least 1 arguments, 2 provided.
+Trying reference_monitor_bt1124.r2py  with  dp2580_attempt1_invalidcontentwritten_expectedseonreading.r2py
+[(1) ERROR]: Unexpected exception when handling invalid content in ABFile: Function 'ABopenfile' expects at least 1 arguments, 2 provided.
+--
+Trying reference_monitor_bt1124.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Function 'ABopenfile' expects at least 1 arguments, 2 provided.
+--
+Trying reference_monitor_bws272.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: global name 'checkFile' is not defined
+Trying reference_monitor_bws272.r2py  with  dp2580_attempt1_invalidcontentwritten_expectedseonreading.r2py
+[(1) ERROR]: Unexpected exception when handling invalid content in ABFile: global name 'checkFile' is not defined
+--
+Trying reference_monitor_bws272.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: global name 'checkFile' is not defined
+--
+Trying reference_monitor_ckc358.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_cpb325.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_ddw284.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: Cannot openfile non-existent file "testfile.txt.a" without creating it!
+--
+Trying reference_monitor_ddw284.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.b" because it is already open!
+--
+Trying reference_monitor_dp2580.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_dp2580_flawed.r2py  with  dp2580_attempt1_invalidcontentwritten_expectedseonreading.r2py
+[(1) ERROR]: AssertionError - ABFile returns wrong content written to it!  Here is how it was found: 1. New ABFile was created for writing.  2. Writeat was called with incorrect content (TerriblyWrongContent) 3. Readat was called. Expected: SE, actual: SE1
+Trying reference_monitor_dp2580_flawed.r2py  with  dp2580_attempt2_invalidcontentwrittenclosed_expectedseonreading.r2py
+(2) [ERROR]: AssertionError - After closing ABFile we get wrong content written to it! Here is how it was found: 1. New ABFile was created for writing. 2. Writeat was called with incorrect content (TerriblyWrongContent) 3. File was closed and reopened for reading. 4. Readat was called. Expected: SE, actual: SE1
+Trying reference_monitor_dp2580_flawed.r2py  with  dp2580_attempt3_usevalidnamebutsmallcaps_expectedseonreading.r2py
+[(3) ERROR]: AssertionError - sCONTENTe written, file closed, reopened for reading, readat() called, should get SE on readat but got:SE1
+Trying reference_monitor_dp2580_flawed.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_dyt221.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: 
+--
+Trying reference_monitor_fa961.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_gc1753.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: Cannot openfile non-existent file "testfile.txt.a" without creating it!
+--
+Trying reference_monitor_gc1753.r2py  with  dp2580_attempt1_invalidcontentwritten_expectedseonreading.r2py
+[(1) ERROR]: AssertionError - ABFile returns wrong content written to it!  Here is how it was found: 1. New ABFile was created for writing.  2. Writeat was called with incorrect content (TerriblyWrongContent) 3. Readat was called. Expected: SE, actual: 
+--
+Trying reference_monitor_gc1753.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_gcr253.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_grp270.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: ABFile instance has no attribute 'Afile'
+--
+Trying reference_monitor_grp270.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_hps257.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: Cannot openfile non-existent file "testfile.txt.b" without creating it!
+--
+Trying reference_monitor_hps257.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_hs3500.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: ABFile instance has no attribute 'Afile'
+--
+Trying reference_monitor_hs3500.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_ht974.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: ABFile instance has no attribute 'Afile'
+--
+Trying reference_monitor_ht974.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_if497.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_jaa661.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: ABFile instance has no attribute 'Afile'
+--
+Trying reference_monitor_jaa661.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_jc5537.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_jc8415.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: ABFile instance has no attribute 'Afile'
+--
+Trying reference_monitor_jc8415.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_jh4339.r2py  with  dp2580_attempt1_invalidcontentwritten_expectedseonreading.r2py
+[(1) ERROR]: AssertionError - ABFile returns wrong content written to it!  Here is how it was found: 1. New ABFile was created for writing.  2. Writeat was called with incorrect content (TerriblyWrongContent) 3. Readat was called. Expected: SE, actual: 
+Trying reference_monitor_jh4339.r2py  with  dp2580_attempt2_invalidcontentwrittenclosed_expectedseonreading.r2py
+(2) [ERROR]: AssertionError - After closing ABFile we get wrong content written to it! Here is how it was found: 1. New ABFile was created for writing. 2. Writeat was called with incorrect content (TerriblyWrongContent) 3. File was closed and reopened for reading. 4. Readat was called. Expected: SE, actual: 
+--
+Trying reference_monitor_jh4339.r2py  with  dp2580_attempt3_usevalidnamebutsmallcaps_expectedseonreading.r2py
+[(3) ERROR]: AssertionError - sCONTENTe written, file closed, reopened for reading, readat() called, should get SE on readat but got:
+--
+Trying reference_monitor_jh4339.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_js7708.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: close() takes exactly 1 argument (2 given)
+--
+Trying reference_monitor_js7708.r2py  with  dp2580_attempt1_invalidcontentwritten_expectedseonreading.r2py
+[(1) ERROR]: Unexpected exception when handling invalid content in ABFile: 'NoneType' object has no attribute 'startswith'
+--
+Trying reference_monitor_js7708.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_js7817.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: ABFile instance has no attribute 'Afile'
+--
+Trying reference_monitor_js7817.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_jw4321.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: ABFile instance has no attribute 'Afile'
+--
+Trying reference_monitor_jw4321.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_jy1873.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: ABFile instance has no attribute 'Afile'
+--
+Trying reference_monitor_jy1873.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_jy2268.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: ABFile instance has no attribute 'Afile'
+--
+Trying reference_monitor_jy2268.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_ka1745.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_kc1818.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: ABFile instance has no attribute 'Afile'
+--
+Trying reference_monitor_kc1818.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_kc3289.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: ABFile instance has no attribute 'Afile'
+--
+Trying reference_monitor_kc3289.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_kf1270.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_kg1965.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: ABFile instance has no attribute 'Afile'
+--
+Trying reference_monitor_kg1965.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_kjh398.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_kp1572.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: ABFile instance has no attribute 'Afile'
+--
+Trying reference_monitor_kp1572.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_ks4703.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_ky1081.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: Cannot openfile non-existent file "testfile.txt.b" without creating it!
+--
+Trying reference_monitor_ky1081.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_lac610.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: Function 'emulated_open' takes 2 arguments, not 1 as you provided.
+--
+Trying reference_monitor_lac610.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_ll3087.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: Cannot openfile non-existent file "testfile.txt.b" without creating it!
+--
+Trying reference_monitor_ll3087.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_ln1026.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: ABFile instance has no attribute 'Afile'
+--
+Trying reference_monitor_ln1026.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a.txt" because it is already open!
+--
+Trying reference_monitor_lq437.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_man514.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_met398.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_mg3933.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: ABFile instance has no attribute 'Afn'
+Trying reference_monitor_mg3933.r2py  with  dp2580_attempt1_invalidcontentwritten_expectedseonreading.r2py
+[(1) ERROR]: Unexpected exception when handling invalid content in ABFile: ABFile instance has no attribute 'Afn'
+--
+Trying reference_monitor_mg3933.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: ABFile instance has no attribute 'Afn'
+--
+Trying reference_monitor_mg4459.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_mg5309.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_mg5309.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_mp3494.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot remove file "testfile.txt.a" because it is in use!
+--
+Trying reference_monitor_ms10625.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: lock
+--
+Trying reference_monitor_ms10625.r2py  with  dp2580_attempt1_invalidcontentwritten_expectedseonreading.r2py
+[(1) ERROR]: Unexpected exception when handling invalid content in ABFile: lock
+--
+Trying reference_monitor_ms10625.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_msa530.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_naa355.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: global name 'Falsefil' is not defined
+Trying reference_monitor_naa355.r2py  with  dp2580_attempt1_invalidcontentwritten_expectedseonreading.r2py
+[(1) ERROR]: Unexpected exception when handling invalid content in ABFile: global name 'Falsefil' is not defined
+--
+Trying reference_monitor_naa355.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: global name 'Falsefil' is not defined
+--
+SE2345E
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: ABFile instance has no attribute 'Afile'
+--
+Trying reference_monitor_ni444.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_ogi202.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: global name 'filesize' is not defined
+Trying reference_monitor_ogi202.r2py  with  dp2580_attempt1_invalidcontentwritten_expectedseonreading.r2py
+[(1) ERROR]: Unexpected exception when handling invalid content in ABFile: global name 'filesize' is not defined
+--
+Trying reference_monitor_ogi202.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: global name 'filesize' is not defined
+--
+Trying reference_monitor_on371.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_ork216.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_pb1826.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: Cannot openfile non-existent file "testfile.txt.b" without creating it!
+--
+Trying reference_monitor_pb1826.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.b" because it is already open!
+--
+Trying reference_monitor_pk1501.r2py  with  dp2580_attempt4_createtwofilessamename_expectnoexceptions.r2py
+[(4) ERROR]: Unexpected exception while creating 2 files with the same name: Cannot open file "testfile.txt.a" because it is already open!
+--
+Trying reference_monitor_rg3365.r2py  with  dp2580_attempt0_createwriteread_expectednoexceptionsraised.r2py
+[(0) ERROR]: Unexpected exception when accessing valid ABFile: ABFile instance has no attribute 'Afile'

@@ -1,0 +1,39 @@
+TYPE="type"
+ARGS="args"
+RETURN="return"
+EXCP="exceptions"
+TARGET="target"
+FUNC="func"
+OBJC="objc"
+
+# cleanup for test
+def cleanup():
+  if "testfile.txt.a" in listfiles():
+    removefile("testfile.txt.a")
+  if "testfile.txt.b" in listfiles():
+    removefile("testfile.txt.b")
+	
+# assumption 0 - file can be created, written to, open, accessed for reading:
+# I will create ABFile, write correct S12345E via writeat()
+# close the ABFile, open it again, and It would return correct S12345E 
+# back to me when I read it with via readat(). No exceptions should be thrown
+
+try:
+	
+	cleanup()
+	myfile=ABopenfile("testfile.txt",True)
+	myfile.writeat("S12345E",0)
+	myfile.close()
+	
+	myfile=ABopenfile("testfile.txt",False)
+	expected = "S12345E"
+	actual = myfile.readat(None,0)
+	
+# We dont expect exceptions on creating file because we cleaned up before
+# and performing within basic success scenario => exception = test failure
+except Exception as e: 
+	log("[(0) ERROR]: Unexpected exception when accessing valid ABFile: " + str(e) + "\n")
+	
+finally:
+	myfile.close()
+	pass

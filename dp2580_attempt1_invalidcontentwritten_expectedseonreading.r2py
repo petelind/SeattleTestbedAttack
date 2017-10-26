@@ -1,0 +1,40 @@
+TYPE="type"
+ARGS="args"
+RETURN="return"
+EXCP="exceptions"
+TARGET="target"
+FUNC="func"
+OBJC="objc"
+
+# cleanup for test
+def cleanup():
+  if "testfile.txt.a" in listfiles():
+    removefile("testfile.txt.a")
+  if "testfile.txt.b" in listfiles():
+    removefile("testfile.txt.b")
+	
+# assumption 1 - monitor simply doesnt work:
+# I will create ABFile, write incorrect information via writeat()
+# and it would feed it back to me when I read it with via readat()
+
+try:
+	
+	cleanup()
+	myfile=ABopenfile("testfile.txt",True)
+	myfile.writeat("TerriblyWrongContent",0)
+	
+	expected = "SE"
+	actual = myfile.readat(None,0)
+	assert(expected == actual)
+	
+except AssertionError:
+	log("[(1) ERROR]: AssertionError - ABFile returns wrong content written to it!  Here is how it was found: 1. New ABFile was created for writing.  2. Writeat was called with incorrect content (TerriblyWrongContent) 3. Readat was called. Expected: SE, actual: " + actual + "\n")
+	
+# We dont expect exceptions on creating file because we cleaned up before
+# and performing within basic success scenario => exception = test failure
+except Exception as e: 
+	log("[(1) ERROR]: Unexpected exception when handling invalid content in ABFile: " + str(e) + "\n")
+	
+finally:
+	myfile.close()
+	pass

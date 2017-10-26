@@ -1,0 +1,38 @@
+TYPE="type"
+ARGS="args"
+RETURN="return"
+EXCP="exceptions"
+TARGET="target"
+FUNC="func"
+OBJC="objc"
+
+# cleanup for test
+def cleanup():
+  if "testfile.txt.a" in listfiles():
+    removefile("testfile.txt.a")
+  if "testfile.txt.b" in listfiles():
+    removefile("testfile.txt.b")
+	
+# assumption 3 - user does not distinguish for SE and se:
+# I will create ABFile, write 'correct' sCONTENTe information via writeat()
+# close the ABFile, open it again, and It would feed incorrect content 
+# back to me when I read it with via readat() - it should be SE
+
+try:
+	
+	cleanup()
+	myfile=ABopenfile("testfile.txt",True)
+	myfile.writeat("sCONTENTe",0)
+	myfile.close()
+	
+	myfile=ABopenfile("testfile.txt",False)
+	expected = "SE"
+	actual = myfile.readat(None,0)
+	assert(expected == actual)
+	
+except AssertionError:
+	log("[(3) ERROR]: AssertionError - sCONTENTe written, file closed, reopened for reading, readat() called, should get SE on readat but got:" + actual + "\n")
+	
+finally:
+	myfile.close()
+	pass

@@ -1,0 +1,38 @@
+TYPE="type"
+ARGS="args"
+RETURN="return"
+EXCP="exceptions"
+TARGET="target"
+FUNC="func"
+OBJC="objc"
+
+# cleanup for test
+def cleanup():
+  if "testfile.txt.a" in listfiles():
+    removefile("testfile.txt.a")
+  if "testfile.txt.b" in listfiles():
+    removefile("testfile.txt.b")
+	
+# assumption 2 - monitor still doesnt work:
+# I will create ABFile, write incorrect information via writeat()
+# close the ABFile, open it again, and It would feed incorrect content 
+# back to me when I read it with via readat()
+
+try:
+	
+	cleanup()
+	myfile=ABopenfile("testfile.txt",True)
+	myfile.writeat("TerriblyWrongContent",0)
+	myfile.close()
+	
+	myfile=ABopenfile("testfile.txt",False)
+	expected = "SE"
+	actual = myfile.readat(None,0)
+	assert(expected == actual)
+	
+except AssertionError:
+	log("(2) [ERROR]: AssertionError - After closing ABFile we get wrong content written to it! Here is how it was found: 1. New ABFile was created for writing. 2. Writeat was called with incorrect content (TerriblyWrongContent) 3. File was closed and reopened for reading. 4. Readat was called. Expected: SE, actual: " + actual + "\n")
+	
+finally:
+	myfile.close()
+	pass

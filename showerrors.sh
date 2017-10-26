@@ -1,0 +1,1 @@
+grep -B 1 'ERROR' $1
