@@ -1,0 +1,49 @@
+TYPE="type"
+ARGS="args"
+RETURN="return"
+EXCP="exceptions"
+TARGET="target"
+FUNC="func"
+OBJC="objc"
+
+# cleanup for test
+def cleanup():
+  if "testfile.txt.a" in listfiles():
+    removefile("testfile.txt.a")
+  if "testfile.txt.b" in listfiles():
+    removefile("testfile.txt.b")
+	
+# assumption 6 - 2 paraller threads with same ABFile should not ovewrite each other.
+# Will spin off 2 threads accessing same file name. Will write in 1st, close it, read from 2nd.
+# 2nd should readat SE, not valid content of 1st file
+
+
+def accessABFileFromThread():
+	if "testfile.txt.a" in listfiles(): # if we already have file which exist - lets just try to write into it
+		myfile1=ABopenfile("testfile.txt",False)
+
+
+try:
+	
+	cleanup()
+	myfile1=ABopenfile("testfile.txt",True)
+	myfile2=ABopenfile("testfile.txt",True)
+	
+	myfile1.writeat("SValidContentE",0)
+	myfile1.close()
+	
+	expected = "SE"
+	actual = myfile2.readat(None,0)
+	
+	assert(expected == actual)
+	
+
+except AssertionError:
+	log("[(5) ERROR]: AssertionError - created 2 files with the same name, wrote valid content to 1st, got same from 2nd: " + actual + "\n")
+
+	
+except Exception as e: 
+	log(str(e))
+	
+finally:
+	pass
