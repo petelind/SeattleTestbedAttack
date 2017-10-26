@@ -8,29 +8,35 @@ OBJC="objc"
 
 # cleanup for test
 def cleanup():
-  if "testfile.txt.a" in listfiles():
-    removefile("testfile.txt.a")
-  if "testfile.txt.b" in listfiles():
-    removefile("testfile.txt.b")
+	if "testfile.txt.a" in listfiles():
+		removefile("testfile.txt.a")
+		log("A removed")
+	if "testfile.txt.b" in listfiles():
+		removefile("testfile.txt.b")
+		log("B removed")
+	log("Cleanup finished")
+	return
 	
 # assumption 5 - when 2 files with same name are open writing to one should not influence 2nd
 # I will create ABFile, and then again ABFile with the same name, then write to 1st & close it.
 # 2nd should readat SE, not valid content of 1st file
 
-try:
-	
+try:	
 	cleanup()
 	myfile1=ABopenfile("testfile.txt",True)
+	log("File1 opened")
 	myfile2=ABopenfile("testfile.txt",True)
-	
-	myfile1.writeat("SValidContentE",0)
+	log("File2 opened")
+	myfile2.writeat("SValidContent2E",0)
+	myfile2.close()
+	myfile1.writeat("SValidContent1E",0)
 	myfile1.close()
-	
-	expected = "SE"
+	log("Files closed")
+	expected = "SValidContent2E"
+	log("Actual")
+	myfile2 = ABopenfile("testfile.txt",False)
 	actual = myfile2.readat(None,0)
-	
 	assert(expected == actual)
-	
 
 except AssertionError:
 	log("[(5) ERROR]: AssertionError - created 2 files with the same name, wrote valid content to 1st, got same from 2nd: " + actual + "\n")
